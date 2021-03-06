@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-educaholicmaster-dev-164426-authRole",
+      "UnauthRoleArn": "arn:aws:iam::934780306557:role/amplify-educaholicmaster-dev-164426-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::934780306557:role/amplify-educaholicmaster-dev-164426-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-educaholicmaster-dev-164426-deployment",
+      "UnauthRoleName": "amplify-educaholicmaster-dev-164426-unauthRole",
+      "StackName": "amplify-educaholicmaster-dev-164426",
+      "StackId": "arn:aws:cloudformation:eu-west-1:934780306557:stack/amplify-educaholicmaster-dev-164426/3717cf30-7e9b-11eb-a439-0632e84074e3",
+      "AmplifyAppId": "d3c7zqcw9wckh0"
+    }
+  }
+}
