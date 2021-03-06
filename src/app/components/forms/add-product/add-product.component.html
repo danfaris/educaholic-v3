@@ -1,0 +1,279 @@
+<div class="main-content">
+  <div class="header">
+    <div class="container-fluid">
+      <div class="header-body">
+        <div class="row align-items-end">
+          <div class="col">
+            <!-- Pretitle -->
+            <h6 class="header-pretitle">produtos</h6>
+
+            <!-- Title -->
+            <h1 class="header-title">Adicionar Novo Produto</h1>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <div class="col-12">
+        <div class="mb-4">
+          <form
+            class="new_product"
+            id="new_product"
+            action="/dashboard/products"
+            accept-charset="UTF-8"
+            method="post"
+          >
+            <input name="utf8" type="hidden" value="✓" /><input
+              type="hidden"
+              name="authenticity_token"
+              value="vBBvGWkpJMZjkAmoraRixJrIEzawdBijHtMBZiq8GhsC0JwOrN73XxeW9k4mgdXYM8SEDggWVzfUy6Yhd68yVA=="
+            />
+            <label for="product-name">Nome</label>
+            <input
+              class="form-control form-control-prepended search"
+              required="required"
+              type="text"
+            />
+            <hr class="mt-4 mb-5" />
+
+            <div class="form-group">
+              <label for="product_description">Descrição</label>
+              <textarea
+                class="form-control"
+                required="required"
+                placeholder="Esse produto vai te ensinar a fazer venda todos os dias, 24/7. Venha conferir!!"
+                name="product[description]"
+                id="product_description"
+              ></textarea>
+            </div>
+            <div class="row"></div>
+            <hr class="mt-4 mb-5" />
+            <ul class="list-group" id="accordion">
+              <li
+                aria-controls="collapseIntegrationSettings"
+                aria-expanded="false"
+                class="d-flex justify-content-between align-items-center collapsed"
+                data-target="#collapseIntegrationSettings"
+                data-toggle="collapse"
+              >
+                <div class="list-group col-12">
+                  <div class="row">
+                    <div class="col-11">
+                      <div class="header">
+                        <h2 class="header-title">Configurações de Tags</h2>
+                      </div>
+                    </div>
+                    <div class="col-1 text-right">
+                      <i class="fas fa-expand-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <div
+                aria-labelledby="headingIntegrationSettings"
+                class="collapse"
+                data-parent=""
+                id="collapseIntegrationSettings"
+                style=""
+              >
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="product_tag_provider"
+                        >Plataforma da tag</label
+                      >
+                      <select
+                        class="form-control custom-select select2-hidden-accessible"
+                        data-toggle="select"
+                        name="product[tag_provider]"
+                        id="product_tag_provider"
+                        data-select2-id="product_tag_provider"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      >
+                        <option value=""></option>
+                        <option
+                          selected="selected"
+                          value=""
+                          data-select2-id="2"
+                        ></option>
+                        <option value="infusionsoft">
+                          Infusionsoft
+                        </option></select
+                      ><span
+                        class="select2 select2-container select2-container--default"
+                        dir="ltr"
+                        data-select2-id="1"
+                        style="width: 100px"
+                        ><span class="selection"
+                          ><span
+                            class="select2-selection__rendered"
+                            id="select2-product_tag_provider-container"
+                            role="textbox"
+                            aria-readonly="true"
+                            title=""
+                          ></span>
+                          <span
+                            class="select2-selection__arrow"
+                            role="presentation"
+                            ><b role="presentation"></b
+                          ></span>
+                        </span> </span
+                      ><span class="dropdown-wrapper" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="product_tag_id_payment_paid"
+                        >TAG ID: Pagamento Efetuado</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="1212"
+                        type="text"
+                        value=""
+                        name="product[tag_id_payment_paid]"
+                        id="product_tag_id_payment_paid"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="product_tag_id_payment_issue"
+                        >TAG ID: Problema no Pagamento</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="1213"
+                        type="text"
+                        value=""
+                        name="product[tag_id_payment_issue]"
+                        id="product_tag_id_payment_issue"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="product_tag_id_payment_pending"
+                        >TAG ID: Boleto Gerado</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="1214"
+                        type="text"
+                        value=""
+                        name="product[tag_id_payment_pending]"
+                        id="product_tag_id_payment_pending"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="product_tag_id_abandoned_cart"
+                        >TAG ID: Carrinho Abandonado</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="1215"
+                        type="text"
+                        value=""
+                        name="product[tag_id_abandoned_cart]"
+                        id="product_tag_id_abandoned_cart"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <div class="row"></div>
+            <hr class="mt-4 mb-5" />
+            <ul class="list-group" id="accordion-2">
+              <li
+                aria-controls="collapsePageIntegrationSettings"
+                aria-expanded="false"
+                class="d-flex justify-content-between align-items-center collapsed"
+                data-target="#collapsePageIntegrationSettings"
+                data-toggle="collapse"
+              >
+                <div class="list-group col-12">
+                  <div class="row">
+                    <div class="col-11">
+                      <div class="header">
+                        <h2 class="header-title">Configurações de Páginas</h2>
+                      </div>
+                    </div>
+                    <div class="col-1 text-right">
+                      <i class="fas fa-expand-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <div
+                aria-labelledby="headingPageIntegrationSettings"
+                class="collapse"
+                data-parent=""
+                id="collapsePageIntegrationSettings"
+                style=""
+              >
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="product_sales_page_url"
+                        >URL: Página de vendas</label
+                      >
+                      <input
+                        class="form-control"
+                        type="url"
+                        value=""
+                        name="product[sales_page_url]"
+                        id="product_sales_page_url"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="product_thank_you_page_url"
+                        >URL: Página de obrigado</label
+                      >
+                      <input
+                        class="form-control"
+                        type="url"
+                        value=""
+                        name="product[thank_you_page_url]"
+                        id="product_thank_you_page_url"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="product_error_page_url"
+                        >URL: Página de erro</label
+                      >
+                      <input
+                        class="form-control"
+                        type="url"
+                        value=""
+                        name="product[error_page_url]"
+                        id="product_error_page_url"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <!-- Divider -->
+            <div class="row"></div>
+            <hr class="mt-4 mb-5" />
+            <input
+              type="submit"
+              name="commit"
+              value="Salvar Produto"
+              class="btn btn-outline-dark btn-block"
+              data-disable-with="Salvar Produto"
+            />
+            <a
+              class="btn btn-link btn-block text-muted"
+              href="/dashboard/products"
+            >
+              Cancelar
+            </a>
+            <!-- Divider -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

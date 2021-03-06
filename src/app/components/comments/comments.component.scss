@@ -1,0 +1,17 @@
+.main-content {
+  padding-left: 249px;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    padding: 20px;
+  }
+  #meu-card p {
+    width: 430px;
+    margin: 10px;
+  }
+  #meu-layout div p {
+    display: inline-flexbox;
+  }
+}

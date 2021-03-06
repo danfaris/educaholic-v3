@@ -1,0 +1,242 @@
+<div class="main-content">
+  <div class="header">
+    <div class="container-fluid">
+      <!-- Body -->
+      <div class="header-body">
+        <div class="row align-items-end">
+          <div class="col">
+            <!-- Pretitle -->
+            <h6 class="header-pretitle">overview</h6>
+
+            <!-- Title -->
+            <h1 class="header-title">Alunos</h1>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .header-body -->
+    </div>
+    <div class="col-12" id="tab-alunos">
+      <div class="card">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <form
+                action="/dashboard/customers"
+                accept-charset="UTF-8"
+                method="get"
+              >
+                <input name="utf8" type="hidden" value="✓" />
+                <input type="hidden" name="view" id="view" />
+                <!-- Form -->
+
+                <div class="input-group input-group-flush">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fe fe-search"></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    name="customer_email"
+                    id="customer_email-id"
+                    class="form-control form-control-prepended search list-search pl-3"
+                    placeholder="Pesquise por e-mail"
+                  />
+                  <button
+                    class="btn btn-sm btn-white mt-2 h-25 pb-1 pl-3 pr-3 mb-2"
+                    type="submit"
+                  >
+                    <i class="fas fa-search"></i>
+                    Pesquisar
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-auto">
+              <div id="popoverDemo">
+                <a
+                  class="btn btn-sm btn-white"
+                  data-toggle="modal"
+                  href="#modalDemo"
+                >
+                  <i class="fas fa-sliders-h"></i> Filtrar
+                </a>
+              </div>
+              <div
+                aria-hidden="true"
+                class="modal fade fixed-right"
+                id="modalDemo"
+                style="display: none"
+                tabindex="-1"
+              >
+                <div class="modal-dialog modal-dialog-vertical" role="document">
+                  <form class="modal-content" id="demoForm">
+                    <div class="modal-body">
+                      <!-- Close -->
+                      <a aria-label="Close" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                      </a>
+                      <!-- Heading -->
+                      <h2 class="text-center mb-2">Filtros</h2>
+                      <!-- Text -->
+                      <p class="mb-4 text-muted">
+                        Filtre registros baseados em uma ou mais condições. Será
+                        utilizado o operador "AND (E)", que mostra um registro
+                        se todas as condições forem verdadeiras.
+                      </p>
+                      <!-- Divider -->
+                      <hr class="mb-4" />
+                      <!-- Heading -->
+                      <h4 class="mb-3">Criado em</h4>
+                      <!-- form group -->
+                      <div class="form-group">
+                        <input
+                          type="hidden"
+                          name="created_at"
+                          id="created_at"
+                          class="form-control flatpickr-input"
+                          data-toggle="flatpickr"
+                          data-mode="range"
+                          data-enable-time="false"
+                          data-format="d/m/Y H:i"
+                          data-enable-alt-input="true"
+                          data-alt-format="j F, Y"
+                        />
+                        <input
+                          class="form-control flatpickr-input form-control input"
+                          placeholder=""
+                          tabindex="0"
+                          type="text"
+                          readonly="readonly"
+                        />
+                      </div>
+                      <!-- Heading -->
+                      <h4 class="mb-3">Email do Aluno</h4>
+                      <!-- form group -->
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="customer_email"
+                          id="customer_email"
+                          class="form-control"
+                        />
+                      </div>
+                      <!-- Heading -->
+                      <h4 class="mb-3">Nome do Aluno</h4>
+                      <!-- form group -->
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="customer_name"
+                          id="customer_name"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                      <a
+                        class="btn btn-link btn-block text-muted"
+                        href="/dashboard/customers"
+                      >
+                        Limpar Filtros
+                      </a>
+                      <!-- Button -->
+                      <button
+                        class="btn btn-block btn-primary mt-auto"
+                        type="submit"
+                      >
+                        Aplicar Filtros
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-responsive mb-0">
+          <table class="table table-sm table-nowrap card-table table-hover">
+            <thead>
+              <tr>
+                <th class="item-name">Nome</th>
+                <th class="item-email">E-mail</th>
+                <th>Criado em</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="list font-size-base">
+              <tr>
+                <td class="item-name">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <!-- Avatar -->
+                      <a
+                        class="avatar avatar-xs"
+                        href="/dashboard/customers/25"
+                      >
+                        <img
+                          alt="0 0"
+                          class="avatar-img rounded-circle"
+                          src="../../../assets/img/avatars/profiles/avatar-3.jpg"
+                        />
+                      </a>
+                    </div>
+                    <div class="col ml-n2">
+                      <a href="/dashboard/customers/25">Carlos Augusto</a>
+                    </div>
+                  </div>
+                </td>
+                <td class="item-email">ca@educaholic.com.br</td>
+                <td>10/07/20 12:04</td>
+                <td>
+                  <a class="" href="/dashboard/customers/25"
+                    ><i class="far fa-eye"></i>
+                    Ver
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer">
+          <div class="row justify-content-center">
+            <nav
+              class="pagy-bootstrap-nav"
+              role="navigation"
+              aria-label="pager"
+            >
+              <ul class="pagination">
+                <li class="page-item prev disabled">
+                  <a href="#" class="page-link">‹&nbsp;Anterior</a>
+                </li>
+                <li class="page-item active">
+                  <a href="/dashboard/customers?page=1" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                  <a
+                    href="/dashboard/customers?page=2"
+                    class="page-link"
+                    rel="next"
+                    >2</a
+                  >
+                </li>
+                <li class="page-item next">
+                  <a
+                    href="/dashboard/customers?page=2"
+                    class="page-link"
+                    rel="next"
+                    aria-label="next"
+                    >Próximo&nbsp;›</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / .header -->
+</div>

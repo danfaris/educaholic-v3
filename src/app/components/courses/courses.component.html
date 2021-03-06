@@ -1,0 +1,480 @@
+<div class="main-content">
+  <div class="header">
+    <div class="container-fluid">
+      <div class="header">
+        <div class="header-body">
+          <div class="row align-items-end">
+            <div class="col">
+              <!-- Pretitle -->
+              <h6 class="header-pretitle">overview</h6>
+              <!-- Title -->
+              <h1 class="header-title">Lista de Cursos</h1>
+            </div>
+            <div class="col-auto">
+              <!-- Button -->
+              <a
+                class="btn btn-outline-dark"
+                [routerLink]="['/addcourse']"
+                routerLinkActive="router-link-active"
+              >
+                Criar novo curso
+              </a>
+            </div>
+          </div>
+          <!-- / .row -->
+          <div class="row align-items-center">
+            <div class="col">
+              <!-- Nav tabs -->
+              <ul
+                class="nav nav-tabs nav-overflow header-tabs"
+                id="course-tabs"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="/dashboard/courses?view=published"
+                    >Publicado</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/dashboard/courses?view=unpublished"
+                    >Não publicado</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/dashboard/courses?view=all"
+                    >Todos</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-lists-values='["name", "item-author"]' data-toggle="lists">
+        <div
+          data-lists-class="listAlias"
+          data-lists-values='["name", "item-author"]'
+          data-toggle="lists"
+        >
+          <div class="row mb-4">
+            <div class="col">
+              <!-- Form -->
+              <form>
+                <div class="input-group input-group-lg input-group-merge">
+                  <input
+                    class="form-control form-control-prepended search"
+                    placeholder="Filtrar"
+                    type="text"
+                  />
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <span class="fe fe-search"></span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- Tab content -->
+
+          <div class="tab-content">
+            <div
+              class="tab-pane fade active show"
+              id="tabPaneOne"
+              role="tabpanel"
+            >
+              <div class="row listAlias courses-sortable-grid">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 pb-5">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <!-- / .row -->
+                      <!-- Image -->
+                      <a class="avatar avatar-xl card-avatar" href="/">
+                        <img
+                          alt="..."
+                          class="avatar-img rounded-circle"
+                          src="../../../assets/img/covers/profile-cover-3.jpg"
+                        />
+                      </a>
+                      <!-- Body -->
+                      <div class="text-center mb-5">
+                        <!-- Heading -->
+                        <h2 class="card-title">
+                          <a class="item-name" href="#"
+                            >Plano de Engenharia de Software Moderno</a
+                          >
+                        </h2>
+                        <!-- Text -->
+                        <p class="small text-muted mb-3">
+                          <span class="item-title">por Bruno Pinheiro</span>
+                        </p>
+                        <!-- Buttons -->
+                        <a
+                          class="btn btn-sm btn-success btn-rounded-circle"
+                          href=""
+                          target="_blank"
+                        >
+                          <i class="fas fa-upload"></i>
+                        </a>
+                      </div>
+                      <small>Publicado</small>
+                      <!-- Divider -->
+
+                      <!-- Divider -->
+                      <hr class="card-divider mb-0" />
+                      <!-- List group -->
+                      <div class="list-group list-group-flush mb-n3">
+                        <div class="list-group-item">
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Alunos</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-info"
+                                >80</span
+                              >
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Aulas</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-info"
+                                >14</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <hr class="card-divider mb-0" />
+
+                      <div class="list-group list-group-flush mb-n3">
+                        <div class="list-group-item">
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Módulos</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-success"
+                                >4</span
+                              >
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Tempo (h)</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-success"
+                                >11</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 pb-5">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <!-- / .row -->
+                      <!-- Image -->
+                      <a class="avatar avatar-xl card-avatar" href="/">
+                        <img
+                          alt="..."
+                          class="avatar-img rounded-circle"
+                          src="../../../assets/img/covers/profile-cover-6.jpg"
+                        />
+                      </a>
+                      <!-- Body -->
+                      <div class="text-center mb-5">
+                        <!-- Heading -->
+                        <h2 class="card-title">
+                          <a class="item-name" href="#"
+                            >Plano de Retomada do Crescimento</a
+                          >
+                        </h2>
+                        <!-- Text -->
+                        <p class="small text-muted mb-3">
+                          <span class="item-title">por Bruno Pinheiro</span>
+                        </p>
+                        <!-- Buttons -->
+                        <a
+                          class="btn btn-sm btn-success btn-rounded-circle"
+                          href=""
+                          target="_blank"
+                        >
+                          <i class="fas fa-upload"></i>
+                        </a>
+                      </div>
+                      <small>Publicado</small>
+                      <!-- Divider -->
+
+                      <!-- Divider -->
+                      <hr class="card-divider mb-0" />
+                      <!-- List group -->
+                      <div class="list-group list-group-flush mb-n3">
+                        <div class="list-group-item">
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Alunos</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-info"
+                                >80</span
+                              >
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Aulas</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-info"
+                                >14</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <hr class="card-divider mb-0" />
+
+                      <div class="list-group list-group-flush mb-n3">
+                        <div class="list-group-item">
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Módulos</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-success"
+                                >4</span
+                              >
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Tempo (h)</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-success"
+                                >11</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 pb-5">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <!-- / .row -->
+                      <!-- Image -->
+                      <a class="avatar avatar-xl card-avatar" href="/">
+                        <img
+                          alt="..."
+                          class="avatar-img rounded-circle"
+                          src="../../../assets/img/covers/profile-cover-8.jpg"
+                        />
+                      </a>
+                      <!-- Body -->
+                      <div class="text-center mb-5">
+                        <!-- Heading -->
+                        <h2 class="card-title">
+                          <a class="item-name" href="#"
+                            >Plano de Retomada do Negócio Moderno</a
+                          >
+                        </h2>
+                        <!-- Text -->
+                        <p class="small text-muted mb-3">
+                          <span class="item-title">por Bruno Pinheiro</span>
+                        </p>
+                        <!-- Buttons -->
+                        <a
+                          class="btn btn-sm btn-success btn-rounded-circle"
+                          href=""
+                          target="_blank"
+                        >
+                          <i class="fas fa-upload"></i>
+                        </a>
+                      </div>
+                      <small>Publicado</small>
+                      <!-- Divider -->
+
+                      <!-- Divider -->
+                      <hr class="card-divider mb-0" />
+                      <!-- List group -->
+                      <div class="list-group list-group-flush mb-n3">
+                        <div class="list-group-item">
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Alunos</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-info"
+                                >80</span
+                              >
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Aulas</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-info"
+                                >14</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <hr class="card-divider mb-0" />
+
+                      <div class="list-group list-group-flush mb-n3">
+                        <div class="list-group-item">
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Módulos</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-success"
+                                >4</span
+                              >
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <!-- Text -->
+
+                              <small>Tempo (h)</small>
+                            </div>
+                            <div class="col-auto">
+                              <!-- Badge -->
+                              <span class="item-score badge badge-success"
+                                >11</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <nav
+                  class="pagy-bootstrap-nav"
+                  role="navigation"
+                  aria-label="pager"
+                >
+                  <ul class="pagination">
+                    <li class="page-item prev disabled">
+                      <a href="#" class="page-link">‹&nbsp;Anterior</a>
+                    </li>
+                    <li class="page-item active">
+                      <a href="/dashboard/courses?page=1" class="page-link"
+                        >1</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a
+                        href="/dashboard/courses?page=2"
+                        class="page-link"
+                        rel="next"
+                        >2</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a href="/dashboard/courses?page=3" class="page-link"
+                        >3</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a href="/dashboard/courses?page=4" class="page-link"
+                        >4</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a href="/dashboard/courses?page=5" class="page-link"
+                        >5</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a href="/dashboard/courses?page=6" class="page-link"
+                        >6</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a href="/dashboard/courses?page=7" class="page-link"
+                        >7</a
+                      >
+                    </li>
+                    <li class="page-item next">
+                      <a
+                        href="/dashboard/courses?page=2"
+                        class="page-link"
+                        rel="next"
+                        aria-label="next"
+                        >Próximo&nbsp;›</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / .header -->
+</div>

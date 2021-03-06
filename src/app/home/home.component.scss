@@ -1,0 +1,25 @@
+.logo {
+  width: 100px;
+}
+
+q {
+  font-style: italic;
+  font-size: 1.2rem;
+  quotes: "« " " »";
+}
+
+.main-content {
+  padding-left: 249px;
+  overflow: hidden;
+}
+
+// #neomorph {
+//     border-radius: 59px;
+//     background: #f3f6fb;
+//     box-shadow: 24px 24px 49px #acacac, -24px -24px 49px #ffffff;
+// }
+@media (max-width: 767px) {
+  .main-content {
+    padding: 20px;
+  }
+}
