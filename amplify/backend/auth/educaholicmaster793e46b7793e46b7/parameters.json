@@ -1,0 +1,74 @@
+{
+    "identityPoolName": "educaholicmaster793e46b7_identitypool_793e46b7",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "educah793e46b7",
+    "userPoolName": "educaholicmaster793e46b7_userpool_793e46b7",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": "2",
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "userpoolClientLambdaRole": "educah793e46b7_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "793e46b7",
+    "resourceName": "educaholicmaster793e46b7793e46b7",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "manual",
+    "thirdPartyAuth": false,
+    "usernameAttributes": [
+        "email"
+    ],
+    "userPoolGroups": true,
+    "adminQueries": true,
+    "triggers": "{}",
+    "hostedUI": true,
+    "hostedUIDomainName": "educaholicmaster793e46b7-793e46b7",
+    "authProvidersUserPool": [
+        "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:4200/\"],\"LogoutURLs\":[\"http://localhost:4200/\"]}",
+    "userPoolGroupList": [
+        "educaholicMaster3"
+    ],
+    "adminQueryGroup": "educaholicMaster3",
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [],
+    "dependsOn": []
+}
