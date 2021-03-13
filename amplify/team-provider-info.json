@@ -13,7 +13,8 @@
     },
     "categories": {
       "auth": {
-        "educaholicmaster793e46b7793e46b7": {}
+        "educaholicmaster793e46b7793e46b7": {},
+        "userPoolGroups": {}
       },
       "function": {
         "AdminQueries9b5c9f20": {
