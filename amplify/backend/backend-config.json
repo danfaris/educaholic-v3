@@ -19,7 +19,17 @@
     "educaholicmaster793e46b7793e46b7": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "educaholicmaster793e46b7793e46b7PostConfirmation",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        }
+      ],
       "customAuth": false
     }
   },
@@ -37,6 +47,11 @@
           ]
         }
       ]
+    },
+    "educaholicmaster793e46b7793e46b7PostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "api": {

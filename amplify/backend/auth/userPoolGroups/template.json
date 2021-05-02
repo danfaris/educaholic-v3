@@ -41,15 +41,15 @@
     },
     "Resources": {
     
-        "educaholicMaster3Group": {
+        "educaholicMaster31Group": {
           "Type" : "AWS::Cognito::UserPoolGroup",
           "Properties" : {
-              "GroupName" : "educaholicMaster3",
+              "GroupName" : "educaholicMaster31",
               "Precedence" : 1,
               
               "RoleArn" : {
                 "Fn::GetAtt": [
-                    "educaholicMaster3GroupRole",
+                    "educaholicMaster31GroupRole",
                     "Arn"
                 ]
               },
@@ -60,7 +60,7 @@
             }
         },
         
-        "educaholicMaster3GroupRole": {
+        "educaholicMaster31GroupRole": {
             "Type": "AWS::IAM::Role",
             "Properties": {
                 "RoleName":{
@@ -70,7 +70,7 @@
                           {
                             "Ref": "autheducaholicmaster793e46b7793e46b7UserPoolId"
                           },
-                          "-educaholicMaster3GroupRole"
+                          "-educaholicMaster31GroupRole"
                         ]
                     ]
                 },
@@ -295,10 +295,10 @@
     
     "Outputs": {
       
-        "educaholicMaster3GroupRole": {
+        "educaholicMaster31GroupRole": {
             "Value": {
                 "Fn::GetAtt": [
-                    "educaholicMaster3GroupRole",
+                    "educaholicMaster31GroupRole",
                     "Arn"
                 ]
             }

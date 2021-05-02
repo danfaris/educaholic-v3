@@ -19,7 +19,12 @@
       "function": {
         "AdminQueries9b5c9f20": {
           "deploymentBucketName": "amplify-educaholicmaster-dev-164426-deployment",
-          "s3Key": "amplify-builds/AdminQueries9b5c9f20-396b796e734e2f70544d-build.zip"
+          "s3Key": "amplify-builds/AdminQueries9b5c9f20-4a7238486b747648336f-build.zip"
+        },
+        "educaholicmaster793e46b7793e46b7PostConfirmation": {
+          "GROUP": "educaholics",
+          "deploymentBucketName": "amplify-educaholicmaster-dev-164426-deployment",
+          "s3Key": "amplify-builds/educaholicmaster793e46b7793e46b7PostConfirmation-527a5742767157467772-build.zip"
         }
       }
     }
