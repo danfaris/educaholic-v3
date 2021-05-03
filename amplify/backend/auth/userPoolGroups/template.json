@@ -1,0 +1,55 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Parameters": {
+        "autheducaholicmaster793e46b7793e46b7UserPoolId": {
+            "Type": "String",
+            "Default": "autheducaholicmaster793e46b7793e46b7UserPoolId"
+        },
+        
+        "autheducaholicmaster793e46b7793e46b7AppClientID": {
+            "Type": "String",
+            "Default": "autheducaholicmaster793e46b7793e46b7AppClientID"
+        },
+        "autheducaholicmaster793e46b7793e46b7AppClientIDWeb": {
+            "Type": "String",
+            "Default": "autheducaholicmaster793e46b7793e46b7AppClientIDWeb"
+        },
+        "AuthRoleArn": {
+            "Type": "String"
+        },
+        "UnauthRoleArn": {
+            "Type": "String"
+        },
+        "env": {
+            "Type": "String"
+        }
+    },
+    "Conditions": {
+        "ShouldNotCreateEnvResources": {
+            "Fn::Equals": [
+                {
+                    "Ref": "env"
+                },
+                "NONE"
+            ]
+        }
+    },
+    "Resources": {
+    
+        "educaholicv3Group": {
+          "Type" : "AWS::Cognito::UserPoolGroup",
+          "Properties" : {
+              "GroupName" : "educaholicv3",
+              "Precedence" : 1,
+              
+              "UserPoolId" : {
+                "Ref": "autheducaholicmaster793e46b7793e46b7UserPoolId"
+              }
+            }
+        },
+        
+    
+    
+    },
+    
+}

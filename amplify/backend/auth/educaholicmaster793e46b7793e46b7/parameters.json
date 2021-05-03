@@ -1,6 +1,4 @@
 {
-    "identityPoolName": "educaholicmaster793e46b7_identitypool_793e46b7",
-    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "educah793e46b7",
     "userPoolName": "educaholicmaster793e46b7_userpool_793e46b7",
     "autoVerifiedAttributes": [
@@ -34,7 +32,7 @@
     "userpoolClientSetAttributes": false,
     "sharedId": "793e46b7",
     "resourceName": "educaholicmaster793e46b7793e46b7",
-    "authSelections": "identityPoolAndUserPool",
+    "authSelections": "userPoolOnly",
     "authRoleArn": {
         "Fn::GetAtt": [
             "AuthRole",
@@ -48,16 +46,15 @@
         ]
     },
     "useDefault": "manual",
-    "thirdPartyAuth": false,
     "usernameAttributes": [
         "email"
     ],
     "userPoolGroups": true,
-    "adminQueries": true,
+    "adminQueries": false,
     "triggers": "{\n  \"PostConfirmation\": [\n    \"add-to-group\"\n  ]\n}",
     "hostedUI": false,
     "userPoolGroupList": [
-        "educaholicMaster31"
+        "educaholicv3"
     ],
     "adminQueryGroup": "educaholicMaster31",
     "serviceName": "Cognito",
