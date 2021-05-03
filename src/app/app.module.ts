@@ -31,6 +31,7 @@ import { AddcourseComponent } from './components/forms/addcourse/addcourse.compo
 import { AddpathComponent } from './components/forms/addpath/addpath.component';
 import { AddauthorComponent } from './components/forms/addauthor/addauthor.component';
 import { AddcategoryComponent } from './components/forms/addcategory/addcategory.component';
+import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
 
 @NgModule({
   imports: [
@@ -46,7 +47,8 @@ import { AddcategoryComponent } from './components/forms/addcategory/addcategory
     SharedModule,
     ShellModule,
     HomeModule,
-    AppRoutingModule, // must be imported as the last module as it contains the fallback route
+    AmplifyUIAngularModule,
+    AppRoutingModule // must be imported as the last module as it contains the fallback route
   ],
   declarations: [
     AppComponent,
